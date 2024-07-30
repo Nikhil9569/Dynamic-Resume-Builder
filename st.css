@@ -5,12 +5,25 @@ body {
     background-color: #f4f4f4;
 }
 
-.resume {
-    max-width: 800px;
+.container {
+    display: flex;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume {
+    flex: 1;
+    padding: 20px;
+}
+
+.inputs {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 2px solid #eaeaea;
 }
 
 header {
@@ -48,4 +61,20 @@ ul {
 
 ul li {
     list-style-type: disc;
+}
+
+.inputs label {
+    display: block;
+    margin-top: 10px;
+}
+
+.inputs input,
+.inputs textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
